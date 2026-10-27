@@ -28,6 +28,7 @@
           <a href="#networking">5G/6G and O-RAN</a>
           <a href="#sensing">Wireless Sensing</a>
           <a href="#systems">Experimental Systems</a>
+          <a href="#snapshots">Experiment Snapshots</a>
           <p class="nav-heading nav-group">External Links</p>
           <a href="https://scholar.google.com/citations?hl=en&amp;user=ZL0hy0gAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>
           <a href="https://github.com/peihaoY">GitHub</a>
@@ -48,30 +49,102 @@
         <main id="main">
           <section aria-labelledby="demo-library-title">
             <h2 id="demo-library-title">Research Demonstrations</h2>
-            <p class="demo-intro">This page is prepared for short demonstrations of research prototypes and experimental results. Each entry can include an MP4 video or an embedded external video, followed by a concise technical description and related links.</p>
+            <p class="demo-intro">Short demonstrations of wireless networking, digital-twin, sensing, and experimental-system prototypes. All videos on this page have been published without audio.</p>
+            <p class="silent-notice"><span aria-hidden="true">×</span> Audio tracks removed</p>
           </section>
 
           <section id="networking" aria-labelledby="networking-title">
             <h2 id="networking-title">5G/6G and Open RAN</h2>
-            <div class="demo-empty">
-              <span class="play-symbol" aria-hidden="true">▶</span>
-              <div><h3>Video slot ready</h3><p>Add a demo title, MP4 or YouTube link, one-paragraph description, and optional paper/code links.</p></div>
+            <div class="demo-grid">
+              <article class="demo-card">
+                <video controls muted playsinline preload="metadata" poster="assets/images/oran-drl-xapp-poster.jpg">
+                  <source src="assets/videos/oran-drl-xapp.mp4" type="video/mp4" />
+                </video>
+                <div class="demo-card-content">
+                  <p class="demo-meta">O-RAN · DRL · xApp</p>
+                  <h3>Near-Real-Time O-RAN Control</h3>
+                  <p>An end-to-end experiment connecting two distributed units (DU1 and DU2) with a near-real-time RIC/xApp. Terminal telemetry and the accompanying performance trace provide a compact view of online resource-control behavior.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls muted playsinline preload="metadata" poster="assets/images/aodt-cir-cfr-replay-poster.jpg">
+                  <source src="assets/videos/aodt-cir-cfr-replay.mp4" type="video/mp4" />
+                </video>
+                <div class="demo-card-content">
+                  <p class="demo-meta">Digital Twin · CIR/CFR · Replay</p>
+                  <h3>AODT Channel Replay</h3>
+                  <p>A digital-twin playback aligns the mapped environment with raw channel impulse response (CIR) and channel frequency response (CFR) views. The synchronized panels expose delay-domain structure and frequency-domain channel variation during replay.</p>
+                </div>
+              </article>
             </div>
           </section>
 
           <section id="sensing" aria-labelledby="sensing-title">
             <h2 id="sensing-title">Wireless Sensing and ISAC</h2>
-            <div class="demo-empty">
-              <span class="play-symbol" aria-hidden="true">▶</span>
-              <div><h3>Video slot ready</h3><p>This section can host sensing visualizations, real-time detection results, or experimental measurement demos.</p></div>
+            <div class="demo-grid">
+              <article class="demo-card">
+                <video controls muted playsinline preload="metadata" poster="assets/images/outdoor-csi-tracking-poster.jpg">
+                  <source src="assets/videos/outdoor-csi-tracking.mp4" type="video/mp4" />
+                </video>
+                <div class="demo-card-content">
+                  <p class="demo-meta">Outdoor Test · CSI · Trajectory</p>
+                  <h3>Outdoor CSI Field Measurement</h3>
+                  <p>An outdoor measurement combines the field-test setup, mobile trajectory and altitude context, and synchronized CSI replay across four receive ports. The side-by-side views relate movement context to channel magnitude and unwrapped phase.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls muted playsinline preload="metadata" poster="assets/images/50m-azimuth-sensing-poster.jpg">
+                  <source src="assets/videos/50m-azimuth-sensing.mp4" type="video/mp4" />
+                </video>
+                <div class="demo-card-content">
+                  <p class="demo-meta">ISAC · Range–Angle · Doppler</p>
+                  <h3>50 m Azimuth Sensing View</h3>
+                  <p>An outdoor sensing view pairs the physical scene with real-time azimuth–range magnitude and azimuth–Doppler velocity visualizations. The display uses a 50 m range scale to present directional sensing results as the scene evolves.</p>
+                </div>
+              </article>
             </div>
           </section>
 
           <section id="systems" aria-labelledby="systems-title">
             <h2 id="systems-title">Experimental Systems</h2>
-            <div class="demo-empty">
-              <span class="play-symbol" aria-hidden="true">▶</span>
-              <div><h3>Video slot ready</h3><p>This section can host digital-twin, testbed, implementation, and end-to-end system demonstrations.</p></div>
+            <div class="demo-grid">
+              <article class="demo-card">
+                <video controls muted playsinline preload="metadata" poster="assets/images/vr-low-latency-tracking-poster.jpg">
+                  <source src="assets/videos/vr-low-latency-tracking.mp4" type="video/mp4" />
+                </video>
+                <div class="demo-card-content">
+                  <p class="demo-meta">VR · E2E Latency · Mobility</p>
+                  <h3>VR Device Latency and Trajectory</h3>
+                  <p>A synchronized demonstration of the VR user, device view, end-to-end latency readout, and indoor route map. Together, the panels show how the system is observed while the user moves through the building.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls muted playsinline preload="metadata" poster="assets/images/wireless-network-platform-poster.jpg">
+                  <source src="assets/videos/wireless-network-platform.mp4" type="video/mp4" />
+                </video>
+                <div class="demo-card-content">
+                  <p class="demo-meta">Testbed · Network Platform · Deployment</p>
+                  <h3>Wireless Network Experimental Platform</h3>
+                  <p>The experimental-platform view connects an indoor route map with the rack-mounted radio and network equipment used by the testbed, providing physical deployment context for end-to-end measurements.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="snapshots" aria-labelledby="snapshots-title">
+            <h2 id="snapshots-title">Experiment Snapshots</h2>
+            <div class="snapshot-grid">
+              <figure>
+                <img src="assets/images/gnuradio-usrp-receiver.jpg" alt="GNU Radio receiver flowgraph with USRP inputs, constellation and spectrum displays, terminal output, and UDP video playback." />
+                <figcaption><strong>GNU Radio / USRP receiver workflow.</strong> Dual RF input processing, synchronization and equalization blocks, constellation and frequency displays, and UDP media playback in one experimental view.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/csi-four-port-experiment.jpg" alt="Four receive-port CSI magnitude and unwrapped phase plots beside a participant holding a mobile device in a laboratory." />
+                <figcaption><strong>Four-port CSI measurement.</strong> Magnitude and unwrapped-phase traces are shown alongside handheld-device movement in the laboratory environment.</figcaption>
+              </figure>
             </div>
           </section>
         </main>

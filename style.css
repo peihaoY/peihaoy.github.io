@@ -226,6 +226,28 @@ p { margin-top: 0; }
 }
 .demo-button:hover, .demo-button:focus-visible { background: white; color: var(--msu-green); }
 .demo-intro { max-width: 820px; color: var(--muted); }
+.silent-notice {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0 0;
+  padding: 5px 10px;
+  border: 1px solid #b6c3bf;
+  border-radius: 999px;
+  color: var(--msu-green);
+  font-size: 13px;
+  font-weight: 700;
+}
+.silent-notice span {
+  display: grid;
+  width: 17px;
+  height: 17px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--msu-green);
+  color: white;
+  font-size: 12px;
+}
 .demo-empty {
   display: grid;
   grid-template-columns: 72px 1fr;
@@ -251,10 +273,23 @@ p { margin-top: 0; }
 }
 .demo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .demo-card { overflow: hidden; border: 1px solid var(--line); background: white; }
-.demo-card video, .demo-card iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #07110f; }
+.demo-card video, .demo-card iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #07110f; object-fit: contain; }
 .demo-card-content { padding: 16px; }
 .demo-card-content h3 { color: var(--msu-green); }
 .demo-card-content p:last-child { margin-bottom: 0; }
+.demo-meta {
+  margin: 0 0 5px;
+  color: #6c5a2d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.snapshot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.snapshot-grid figure { margin: 0; overflow: hidden; border: 1px solid var(--line); background: #fafbfa; }
+.snapshot-grid img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #e6e9e8; }
+.snapshot-grid figcaption { padding: 14px 16px 16px; color: var(--muted); font-size: 14px; }
+.snapshot-grid figcaption strong { color: var(--ink); }
 
 .publication-list { margin: 0; padding-left: 30px; }
 .publication-list li { margin: 0 0 16px; padding-left: 5px; }
@@ -299,6 +334,7 @@ footer p { margin: 2px 0; }
   .nav-heading, .nav-group, nav .nav-group ~ a { display: none; }
   .interest-grid { grid-template-columns: 1fr; }
   .demo-grid { grid-template-columns: 1fr; }
+  .snapshot-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
