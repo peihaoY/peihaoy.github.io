@@ -172,7 +172,7 @@ p { margin-top: 0; }
 
 .intro-panel {
   display: grid;
-  grid-template-columns: 86px 1fr;
+  grid-template-columns: 118px 1fr;
   align-items: center;
   gap: 18px;
   padding: 16px;
@@ -180,16 +180,13 @@ p { margin-top: 0; }
   background: #fafbfa;
 }
 .avatar {
-  display: grid;
-  width: 78px;
-  height: 78px;
-  place-items: center;
+  display: block;
+  width: 108px;
+  height: 108px;
+  border: 2px solid var(--msu-green);
   border-radius: 50%;
-  background: var(--msu-green);
-  color: white;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 26px;
-  font-weight: 700;
+  object-fit: cover;
+  box-shadow: 0 2px 7px rgba(24, 69, 59, 0.2);
 }
 .intro-panel p:last-child { margin-bottom: 0; }
 .quick-links { display: flex; flex-wrap: wrap; gap: 10px 18px; font-weight: 700; }
@@ -342,7 +339,7 @@ footer p { margin: 2px 0; }
   .radio-pattern { position: absolute; right: -55px; opacity: 0.25; }
   main { padding: 20px 16px 36px; }
   .intro-panel { grid-template-columns: 1fr; }
-  .avatar { width: 62px; height: 62px; font-size: 21px; }
+  .avatar { width: 84px; height: 84px; }
   .publication-list { padding-left: 24px; }
   .education-list article, .contact-panel { grid-template-columns: 1fr; }
   .education-list article { display: grid; gap: 5px; }
