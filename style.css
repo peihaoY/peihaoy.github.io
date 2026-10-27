@@ -66,14 +66,10 @@ a:hover, a:focus-visible { color: #0b6a55; }
   color: var(--msu-green);
 }
 .msu-mark {
-  display: grid;
+  display: block;
   width: 55px;
   height: 48px;
-  place-items: center;
-  border: 2px solid var(--msu-green);
-  font-family: Georgia, serif;
-  font-size: 17px;
-  font-weight: 700;
+  object-fit: contain;
 }
 .msu-name {
   font-family: Georgia, "Times New Roman", serif;
