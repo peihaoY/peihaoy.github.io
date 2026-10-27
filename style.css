@@ -46,6 +46,10 @@ a:hover, a:focus-visible { color: #0b6a55; }
 }
 
 .sidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  min-height: 100vh;
   padding: 18px 14px 32px;
   border-right: 1px solid var(--line);
   background: var(--sidebar);
@@ -98,7 +102,12 @@ nav a[aria-current="page"] { background: white; box-shadow: inset 3px 0 0 var(--
   font-weight: 700;
 }
 .nav-group { margin-top: 22px; }
-.content-column { min-width: 0; }
+.content-column {
+  display: flex;
+  min-width: 0;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 .site-banner {
   position: relative;
@@ -152,7 +161,7 @@ nav a[aria-current="page"] { background: white; box-shadow: inset 3px 0 0 var(--
 .radio-pattern span:nth-child(2) { width: 105px; height: 105px; }
 .radio-pattern span:nth-child(3) { width: 165px; height: 165px; }
 
-main { padding: 24px 24px 48px; }
+main { flex: 1; padding: 24px 24px 48px; }
 section { scroll-margin-top: 16px; margin-bottom: 34px; }
 h2 {
   margin: 0 0 16px;
@@ -282,6 +291,7 @@ footer p { margin: 2px 0; }
   body { background: white; }
   .page-shell { width: 100%; grid-template-columns: 1fr; box-shadow: none; }
   .sidebar { padding: 12px 16px 16px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .sidebar { position: static; min-height: auto; }
   .msu-lockup { min-height: 58px; margin-bottom: 8px; padding-bottom: 10px; }
   .msu-mark { width: 48px; height: 40px; }
   nav { display: flex; flex-direction: row; flex-wrap: wrap; gap: 3px 14px; padding-bottom: 3px; }
