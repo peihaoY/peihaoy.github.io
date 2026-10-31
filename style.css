@@ -1,12 +1,12 @@
 :root {
-  --primary: #3a5068;
-  --primary-dark: #293c50;
-  --primary-soft: #f1f4f7;
+  --primary: #536f8b;
+  --primary-dark: #e6ebf0;
+  --primary-soft: #f4f7f9;
   --gold: #c7a052;
   --ink: #20262c;
   --muted: #5f6872;
-  --line: #cfd5dc;
-  --sidebar: #f3f4f6;
+  --line: #d8dee4;
+  --sidebar: #f7f8fa;
   --paper: #ffffff;
 }
 
@@ -21,7 +21,7 @@ body {
   line-height: 1.52;
 }
 a { color: var(--primary); }
-a:hover, a:focus-visible { color: #587a9b; }
+a:hover, a:focus-visible { color: #315f86; }
 
 .skip-link {
   position: fixed;
@@ -42,7 +42,7 @@ a:hover, a:focus-visible { color: #587a9b; }
   margin: 0 auto;
   grid-template-columns: 245px minmax(0, 1fr);
   background: var(--paper);
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 28px rgba(54, 70, 85, 0.14);
 }
 
 .sidebar {
@@ -88,7 +88,7 @@ nav a {
   line-height: 1.35;
   text-decoration: none;
 }
-nav a:hover, nav a:focus-visible { background: white; color: #587a9b; }
+nav a:hover, nav a:focus-visible { background: white; color: #315f86; }
 nav a[aria-current="page"] { background: white; box-shadow: inset 3px 0 0 var(--gold); }
 .nav-heading {
   margin: 0 0 4px;
@@ -114,13 +114,13 @@ nav a[aria-current="page"] { background: white; box-shadow: inset 3px 0 0 var(--
   overflow: hidden;
   padding: 20px 32px;
   border-bottom: 4px solid var(--gold);
-  background: linear-gradient(100deg, rgba(58, 80, 104, 0.99) 0%, rgba(58, 80, 104, 0.97) 58%, rgba(41, 60, 80, 0.88) 100%);
-  color: white;
+  background: linear-gradient(100deg, rgba(220, 228, 236, 0.99) 0%, rgba(235, 240, 244, 0.98) 58%, rgba(244, 246, 248, 0.96) 100%);
+  color: #293b4e;
 }
 .banner-copy { position: relative; z-index: 2; }
 .banner-copy p {
   margin: 0 0 2px;
-  color: #dfe6ee;
+  color: #536b82;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -132,7 +132,7 @@ nav a[aria-current="page"] { background: white; box-shadow: inset 3px 0 0 var(--
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.08;
 }
-.banner-copy span { color: #edf1f5; font-size: 15px; }
+.banner-copy span { color: #40556a; font-size: 15px; }
 .radio-pattern { position: relative; width: 220px; height: 90px; flex: 0 0 220px; opacity: 0.58; }
 .radio-pattern::after {
   position: absolute;
@@ -149,7 +149,7 @@ nav a[aria-current="page"] { background: white; box-shadow: inset 3px 0 0 var(--
   position: absolute;
   top: 50%;
   right: 45px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(83, 111, 139, 0.3);
   border-radius: 50%;
   transform: translate(50%, -50%);
 }
