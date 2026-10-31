@@ -43,7 +43,7 @@
         <main id="main">
           <section aria-labelledby="demo-library-title">
             <h2 id="demo-library-title">Research Demonstrations</h2>
-            <p class="demo-intro">Research projects and experimental demonstrations in wireless sensing, digital twins, O-RAN resource management, experimental platforms, and anti-jamming communications.</p>
+            <p class="demo-intro">Selected projects in AI-driven wireless networks and sensing. These demonstrations span OFDM-based ISAC, real-time 5G channel measurement, O-RAN digital twins and near-real-time control, private-network experimentation, and jamming-resilient mmWave communication.</p>
           </section>
 
           <section id="sensing" aria-labelledby="sensing-title">
@@ -54,9 +54,9 @@
                   <source src="assets/videos/50m-azimuth-sensing.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">ISAC · Range–Angle · Doppler</p>
-                  <h3>Monostatic 5G ISAC Platform and AOA Estimation</h3>
-                  <p>An outdoor sensing view pairs the physical scene with real-time azimuth–range magnitude and azimuth–Doppler velocity visualizations. The display uses a 50 m range scale to present directional sensing results as the scene evolves.</p>
+                  <p class="demo-meta">5G ISAC · Range–Azimuth · Doppler</p>
+                  <h3>Monostatic 5G ISAC Platform and AoA Estimation</h3>
+                  <p>This prototype reuses OFDM communication signals for sensing, extracting range, angle of arrival, and Doppler information from the received echoes. The video pairs the outdoor scene with real-time range–azimuth and azimuth–Doppler views to show target location and motion over a 50 m sensing range.</p>
                 </div>
               </article>
 
@@ -65,9 +65,9 @@
                   <source src="assets/videos/four-port-csi-measurement.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">CSI · Four RX Ports · Measurement</p>
+                  <p class="demo-meta">5G CSI · SRS · Four RX Ports</p>
                   <h3>Measurement of Real-Time Uplink CSI in MSU's Private 5G Network</h3>
-                  <p>5G uplink Channel State Information (CSI) includes not only MIMO channel-matrix coefficients but also Timing Advance (TA). Because 5G operates in a master–slave mode, the network can proactively hand over a smartphone from one gNB to another. This video shows real-time CSI measurements at a commercial base station from a smartphone while the user is standing and walking.</p>
+                  <p>Uplink sounding reference signals allow a commercial 5G radio unit to estimate fine-grained channel state information, including amplitude, phase, frequency response, and timing advance. The video visualizes the CSI measured across four receive ports as a smartphone user alternates between standing and walking.</p>
                 </div>
               </article>
             </div>
@@ -81,9 +81,9 @@
                   <source src="assets/videos/outdoor-csi-tracking.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">Outdoor Test · CSI · Trajectory</p>
-                  <h3>Outdoor CSI Field Measurement</h3>
-                  <p>An outdoor measurement combines the field-test setup, mobile trajectory and altitude context, and synchronized CSI replay across four receive ports. The side-by-side views relate movement context to channel magnitude and unwrapped phase.</p>
+                  <p class="demo-meta">Field Measurement · CSI · Mobility</p>
+                  <h3>Outdoor CSI Measurement for Digital-Twin Evaluation</h3>
+                  <p>This field campaign records uplink CSI along a known outdoor route to provide measured channel data for wireless digital-twin evaluation. The synchronized views align user position and altitude with channel magnitude and unwrapped phase across four receive ports, revealing how the channel evolves with mobility.</p>
                 </div>
               </article>
 
@@ -92,9 +92,9 @@
                   <source src="assets/videos/aodt-cir-cfr-replay.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">Digital Twin · CIR/CFR · Replay</p>
-                  <h3>AODT Channel Replay</h3>
-                  <p>A digital-twin playback aligns the mapped environment with raw channel impulse response (CIR) and channel frequency response (CFR) views. The synchronized panels expose delay-domain structure and frequency-domain channel variation during replay.</p>
+                  <p class="demo-meta">O-RAN Digital Twin · CIR/CFR · Replay</p>
+                  <h3>AODT Channel and Environment Replay</h3>
+                  <p>This digital-twin replay synchronizes a mapped environment with channel impulse response (CIR) and channel frequency response (CFR) measurements. The coordinated views make it possible to inspect how movement and geometry appear in the delay and frequency domains, supporting channel-model validation and digital-twin analysis.</p>
                 </div>
               </article>
             </div>
@@ -108,9 +108,9 @@
                   <source src="assets/videos/vr-low-latency-tracking.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">VR · E2E Latency · Mobility</p>
-                  <h3>VR Device Latency and Trajectory</h3>
-                  <p>A synchronized demonstration of the VR user, device view, end-to-end latency readout, and indoor route map. Together, the panels show how the system is observed while the user moves through the building.</p>
+                  <p class="demo-meta">5G Edge AI · VR · Mobility</p>
+                  <h3>5G Edge AI Offloading for a VR Headset</h3>
+                  <p>This demonstration uses 5G edge AI offloading to support a computation-intensive VR application: the headset streams camera frames to an edge server and receives inference results in real time. The synchronized device view, indoor route, and round-trip latency trace show how application performance changes as the user moves through the building.</p>
                 </div>
               </article>
 
@@ -119,9 +119,9 @@
                   <source src="assets/videos/oran-drl-xapp.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">O-RAN · DRL · xApp</p>
-                  <h3>Near-Real-Time O-RAN Control</h3>
-                  <p>An end-to-end experiment connecting two distributed units (DU1 and DU2) with a near-real-time RIC/xApp. Terminal telemetry and the accompanying performance trace provide a compact view of online resource-control behavior.</p>
+                  <p class="demo-meta">O-RAN · DRL · Near-RT RIC</p>
+                  <h3>Near-Real-Time O-RAN Resource Slicing</h3>
+                  <p>A deep-reinforcement-learning xApp runs in the near-real-time RIC and uses key performance measurements delivered over the E2 interface—including throughput, latency, and block error rate—to adapt resource slicing under changing channels and QoS demands. The video connects the two distributed units, xApp telemetry, and performance traces to expose the live control loop.</p>
                 </div>
               </article>
             </div>
@@ -135,9 +135,9 @@
                   <source src="assets/videos/wireless-network-platform.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">Testbed · Network Platform · Deployment</p>
-                  <h3>Wireless Network Experimental Platform</h3>
-                  <p>The experimental-platform view connects an indoor route map with the rack-mounted radio and network equipment used by the testbed, providing physical deployment context for end-to-end measurements.</p>
+                  <p class="demo-meta">Private 5G · O-RAN · Testbed</p>
+                  <h3>MSU Private 5G O-RAN Experimental Platform</h3>
+                  <p>MSU's private 5G network combines commercial O-RUs and an O-CUDU with smartphones and compute resources for real-world wireless experimentation. The video relates the indoor deployment map to the rack-mounted radio, network, and edge-computing equipment used to evaluate xApps, rApps, network optimization, and end-to-end system performance.</p>
                 </div>
               </article>
             </div>
@@ -151,9 +151,9 @@
                   <source src="assets/videos/anti-jamming-mmwave.mp4" type="video/mp4" />
                 </video>
                 <div class="demo-card-content">
-                  <p class="demo-meta">Anti-Jamming · 5G mmWave · USRP</p>
-                  <h3>GNU Radio / USRP Receiver Workflow</h3>
-                  <p>This project develops a joint analog–digital beamforming receiver for reliable 5G mmWave communication under strong jamming. Online-learning Bayesian optimization adapts the analog beam, while modified MMSE digital detection suppresses residual interference. A 28 GHz over-the-air prototype demonstrates robust packet decoding across diverse targeted-jamming scenarios.</p>
+                  <p class="demo-meta">Anti-Jamming · 28 GHz · Beamforming</p>
+                  <h3>Jamming-Resilient 5G mmWave Receiver</h3>
+                  <p>This project combines Bayesian-optimization-based analog beamforming with modified-MMSE digital detection to suppress interference in both the analog and digital domains. The GNU Radio/USRP demonstration shows the receiver workflow and packet recovery on a 28 GHz over-the-air testbed under strong jamming.</p>
                 </div>
               </article>
             </div>
