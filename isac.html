@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Peihao Yan's integrated sensing and communication research, including a real-time 5G drone sensing field experiment with range, azimuth, and Doppler processing." />
+    <title>Integrated Sensing and Communication | Peihao Yan</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css?v=20261111-1" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="msu-lockup" aria-label="Michigan State University">
+          <img class="msu-mark" src="assets/images/spartan-helmet.svg?v=20261030-3" alt="" aria-hidden="true" />
+          <span class="msu-name">Michigan State<br />University</span>
+        </div>
+        <nav aria-label="Primary navigation">
+          <p class="nav-heading">Peihao Yan</p>
+          <a href="index.html">Home</a>
+          <a href="research.html">Research Interests</a>
+          <a href="demos.html">Project</a>
+          <a href="isac.html" aria-current="page">ISAC</a>
+          <a href="publications.html">Publications</a>
+          <a href="education.html">Education</a>
+          <p class="nav-heading nav-group">External Links</p>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=ZL0hy0gAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>
+          <a href="https://github.com/peihaoY">GitHub</a>
+          <a href="mailto:phyan@msu.edu">Email</a>
+        </nav>
+      </aside>
+
+      <div class="content-column">
+        <header class="site-banner">
+          <div class="banner-copy">
+            <p>Michigan State University</p>
+            <h1>Integrated Sensing and Communication</h1>
+            <span>5G Waveforms · Drone Sensing · Real-Time Signal Processing</span>
+          </div>
+          <div class="radio-pattern" aria-hidden="true"><span></span><span></span><span></span></div>
+        </header>
+
+        <main id="main">
+          <section class="isac-hero" aria-labelledby="field-demo-title">
+            <div class="isac-video">
+              <video controls muted playsinline preload="metadata" poster="assets/images/drone-isac-field-test-poster.jpg">
+                <source src="assets/videos/drone-isac-field-test.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+            </div>
+            <div class="isac-summary">
+              <p class="demo-meta">Outdoor Field Experiment · 5G ISAC</p>
+              <h2 id="field-demo-title">Real-Time Drone Sensing</h2>
+              <p>This field experiment investigates how a 5G platform can support communication and environmental sensing with the same radio infrastructure. A drone serves as a moving aerial target while the receiver processes reflected signals in real time.</p>
+              <ul class="isac-facts">
+                <li><strong>Sensing outputs</strong>Range, azimuth, and radial velocity</li>
+                <li><strong>Live visualization</strong>Azimuth–range and azimuth–Doppler maps</li>
+                <li><strong>Target</strong>Drone moving through an outdoor test area</li>
+              </ul>
+            </div>
+          </section>
+
+          <section aria-labelledby="isac-overview-title">
+            <h2 id="isac-overview-title">What ISAC Enables</h2>
+            <p>Integrated sensing and communication (ISAC) allows a wireless system to deliver data while also using radio reflections to perceive its surroundings. Reusing communication waveforms and infrastructure can reduce the need for a separate radar platform and enable sensing functions such as localization, tracking, motion estimation, and situational awareness for future 5G and 6G networks.</p>
+          </section>
+
+          <section aria-labelledby="workflow-title">
+            <h2 id="workflow-title">Experiment Workflow</h2>
+            <div class="isac-process">
+              <article>
+                <h3>Transmit</h3>
+                <p>The O-RU and O-CU/DU generate and radiate a 5G OFDM waveform through the base-station antenna.</p>
+              </article>
+              <article>
+                <h3>Capture</h3>
+                <p>A colocated sensing receiver and antenna array capture reflections as the drone moves across the field.</p>
+              </article>
+              <article>
+                <h3>Estimate</h3>
+                <p>Real-time processing maps reflected energy across range, azimuth, and Doppler to reveal target position and motion.</p>
+              </article>
+            </div>
+          </section>
+
+          <section aria-labelledby="field-gallery-title">
+            <h2 id="field-gallery-title">Field Experiment</h2>
+            <div class="field-gallery">
+              <figure>
+                <img src="assets/images/drone-isac-field-testing.jpg" alt="Researchers operating a 5G ISAC test platform and sensing receiver during an outdoor drone experiment" width="1200" height="1600" loading="lazy" />
+                <figcaption><strong>Outdoor sensing campaign</strong>The team operates the 5G radio platform and monitors the live sensing pipeline during the drone flight.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/drone-isac-field-team.jpg" alt="Research team standing with the 5G ISAC platform after an outdoor drone field experiment" width="1200" height="1600" loading="lazy" />
+                <figcaption><strong>Experimental platform and team</strong>The field setup combines the radio unit, antenna system, sensing receiver, drone, and real-time visualization equipment.</figcaption>
+              </figure>
+            </div>
+          </section>
+        </main>
+
+        <footer><p>Last updated November 2026 · Peihao Yan</p></footer>
+      </div>
+    </div>
+  </body>
+</html>
