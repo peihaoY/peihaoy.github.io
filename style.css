@@ -288,10 +288,7 @@ p { margin-top: 0; }
 .snapshot-grid figcaption strong { color: var(--ink); }
 
 .isac-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.55fr);
-  gap: 24px;
-  align-items: start;
+  display: block;
 }
 .isac-video {
   overflow: hidden;
@@ -300,33 +297,16 @@ p { margin-top: 0; }
 }
 .isac-video video { display: block; width: 100%; height: auto; }
 .isac-summary {
+  margin-top: 16px;
   padding: 20px;
   border-top: 4px solid var(--gold);
   background: var(--primary-soft);
 }
 .isac-summary h2 { border: 0; padding: 0; }
 .isac-summary p:last-child { margin-bottom: 0; }
-.isac-facts { margin: 16px 0 0; padding: 0; list-style: none; }
-.isac-facts li { padding: 9px 0; border-top: 1px solid var(--line); }
+.isac-facts { display: grid; margin: 16px 0 0; padding: 0; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; list-style: none; }
+.isac-facts li { padding: 9px 0 0; border-top: 1px solid var(--line); }
 .isac-facts strong { display: block; color: var(--primary); font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
-.isac-process { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; counter-reset: isac-step; }
-.isac-process article { position: relative; padding: 18px 16px 16px 52px; border: 1px solid var(--line); background: white; counter-increment: isac-step; }
-.isac-process article::before {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: grid;
-  width: 26px;
-  height: 26px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--primary);
-  color: white;
-  font-weight: 700;
-  content: counter(isac-step);
-}
-.isac-process h3 { color: var(--primary); }
-.isac-process p { margin-bottom: 0; color: var(--muted); }
 .field-gallery {
   display: grid;
   width: min(100%, 570px);
@@ -385,7 +365,7 @@ footer p { margin: 2px 0; }
   .interest-grid { grid-template-columns: 1fr; }
   .demo-grid { grid-template-columns: 1fr; }
   .snapshot-grid { grid-template-columns: 1fr; }
-  .isac-hero, .isac-process { grid-template-columns: 1fr; }
+  .isac-facts { grid-template-columns: 1fr; gap: 8px; }
 }
 
 @media (max-width: 600px) {
