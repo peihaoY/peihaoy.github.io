@@ -290,12 +290,15 @@ p { margin-top: 0; }
 .isac-hero {
   display: block;
 }
+.isac-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.isac-video-card { min-width: 0; margin: 0; }
+.isac-video-card figcaption { padding-top: 10px; text-align: center; color: var(--primary); font-size: 16px; font-weight: 700; }
 .isac-video {
   overflow: hidden;
   border: 1px solid var(--line);
   background: #111820;
 }
-.isac-video video { display: block; width: 100%; height: auto; }
+.isac-video video { display: block; width: 100%; aspect-ratio: 40 / 27; object-fit: contain; height: auto; }
 .isac-summary {
   margin-top: 16px;
   padding: 20px;
@@ -369,6 +372,7 @@ footer p { margin: 2px 0; }
 }
 
 @media (max-width: 600px) {
+  .isac-videos { grid-template-columns: 1fr; }
   body { font-size: 15px; }
   .site-banner { min-height: 128px; padding: 20px; }
   .radio-pattern { position: absolute; right: -55px; opacity: 0.25; }

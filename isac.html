@@ -6,7 +6,7 @@
     <meta name="description" content="Peihao Yan's integrated sensing and communication research, including a real-time 5G drone sensing field experiment with range, azimuth, and Doppler processing." />
     <title>Integrated Sensing and Communication | Peihao Yan</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css?v=20261111-4" />
+    <link rel="stylesheet" href="style.css?v=20261123-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -43,11 +43,25 @@
 
         <main id="main">
           <section class="isac-hero" aria-labelledby="field-demo-title">
-            <div class="isac-video">
-              <video controls muted playsinline preload="metadata" poster="assets/images/drone-isac-field-test-poster.jpg">
-                <source src="assets/videos/drone-isac-field-test.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
+            <div class="isac-videos">
+              <figure class="isac-video-card">
+                <div class="isac-video">
+                  <video controls muted playsinline preload="metadata" aria-label="single drone" poster="assets/images/drone-isac-field-test-poster.jpg">
+                    <source src="assets/videos/drone-isac-field-test.mp4" type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                </div>
+                <figcaption>single drone</figcaption>
+              </figure>
+              <figure class="isac-video-card">
+                <div class="isac-video">
+                  <video controls muted playsinline preload="metadata" aria-label="multi drons" poster="assets/images/three-drone-isac-poster.jpg">
+                    <source src="assets/videos/three-drone-isac.mp4" type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                </div>
+                <figcaption>multi drons</figcaption>
+              </figure>
             </div>
             <div class="isac-summary">
               <p class="demo-meta">Outdoor Field Experiment · 5G ISAC</p>
